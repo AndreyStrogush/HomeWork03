@@ -7,6 +7,7 @@ public class MainTest {
         myCar.setTheDefoltSetOfWheels();
 
         while (true) {
-           CarRunner.runCar(myCar);}
+            CarRunner.runCar(myCar);
+        }
     }
 }
