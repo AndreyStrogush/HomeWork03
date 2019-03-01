@@ -3,7 +3,6 @@ package carExample;
 public class CarDoors {
     private boolean doorIsOpen;
     private boolean windowIsOpen;
-
     //constructors
     public CarDoors() {
     }
@@ -12,7 +11,6 @@ public class CarDoors {
         this.doorIsOpen = doorIsOpen;
         this.windowIsOpen = windowIsOpen;
     }
-
     //metods
     public void setOpenDoor() {
         this.doorIsOpen = true;

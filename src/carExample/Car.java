@@ -103,17 +103,16 @@ class Car {
 
     //set the default set of wheels
     public void setTheDefoltSetOfWheels() {
-        for (int wheel = 0; wheel < 5; wheel++){
+        for (int wheel = 0; wheel < 5; wheel++) {
             wheels.add(new CarWheels(0.5));
         }
     }
 
     //set the default set of doors
     public void setTheDefoltSetOfDoors() {
-        for (int door =0; door < 5; door++) {
+        for (int door = 0; door < 5; door++) {
             doors.add(new CarDoors(false, false));
         }
-
     }
 
     public void printInfoAboutCar() {
