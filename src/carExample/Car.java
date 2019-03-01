@@ -116,6 +116,21 @@ class Car {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Car{" +
+                "productionDate=" + productionDate +
+                ", engineType='" + engineType + '\'' +
+                ", maxSpeed=" + maxSpeed +
+                ", timeToHundreetKPH=" + timeToHundreetKPH +
+                ", maxNumberOfPassengers=" + maxNumberOfPassengers +
+                ", actualNumberOfPassengers=" + actualNumberOfPassengers +
+                ", currentSpeed=" + currentSpeed +
+                ", wheels=" + wheels +
+                ", doors=" + doors +
+                '}';
+    }
+
     public void printInfoAboutCar() {
         System.out.println("\t Car Information \n" +
                 "Date of production is: " + productionDate + "\n" +
@@ -134,6 +149,7 @@ class Car {
             door.printDoorsInfo();
         }
         calculateActualMaxSpeed();
+
     }
 }
 /*
