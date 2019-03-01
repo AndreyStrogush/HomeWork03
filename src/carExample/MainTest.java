@@ -6,8 +6,6 @@ public class MainTest {
         myCar.setTheDefoltSetOfDoors();
         myCar.setTheDefoltSetOfWheels();
 
-        while (true) {
             CarRunner.runCar(myCar);
-        }
     }
 }

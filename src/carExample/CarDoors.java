@@ -1,27 +1,27 @@
 package carExample;
 
 public class CarDoors {
-    private boolean doorIsOpen;
-    private boolean windowIsOpen;
+    private boolean isDoorOpen;
+    private boolean isWindowOpen;
     //constructors
     public CarDoors() {
     }
 
     public CarDoors(boolean doorIsOpen, boolean windowIsOpen) {
-        this.doorIsOpen = doorIsOpen;
-        this.windowIsOpen = windowIsOpen;
+        this.isDoorOpen = doorIsOpen;
+        this.isWindowOpen = windowIsOpen;
     }
     //metods
     public void setOpenDoor() {
-        this.doorIsOpen = true;
+        this.isDoorOpen = true;
     }
 
     public void setCloseDoor() {
-        this.doorIsOpen = false;
+        this.isDoorOpen = false;
     }
 
     public void changeDoorState() {
-        if (doorIsOpen) {
+        if (isDoorOpen) {
             setCloseDoor();
         } else {
             setOpenDoor();
@@ -29,15 +29,15 @@ public class CarDoors {
     }
 
     public void setOpenWindow() {
-        this.windowIsOpen = true;
+        this.isWindowOpen = true;
     }
 
     public void setCloseWindow() {
-        this.windowIsOpen = false;
+        this.isWindowOpen = false;
     }
 
     public void changeWindowState() {
-        if (windowIsOpen) {
+        if (isWindowOpen) {
             setCloseWindow();
         } else {
             setOpenWindow();
@@ -45,15 +45,15 @@ public class CarDoors {
     }
 
     public void printDoorsInfo() {
-        System.out.println("The door is now " + (doorIsOpen ? "open " : "close ") +
-                " \n The window is now " + (windowIsOpen ? "open " : "close "));
+        System.out.println("The door is now " + (isDoorOpen ? "open " : "close ") +
+                " \n The window is now " + (isWindowOpen ? "open " : "close "));
     }
 
     @Override
     public String toString() {
         return "CarDoors{" +
-                "doorIsOpen=" + doorIsOpen +
-                ", windowIsOpen=" + windowIsOpen +
+                "doorIsOpen=" + isDoorOpen +
+                ", windowIsOpen=" + isWindowOpen +
                 '}';
     }
 }

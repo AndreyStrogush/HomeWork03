@@ -1,10 +1,11 @@
 package carExample;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 class Car {
-    private final String productionDate;
+    private final LocalDate productionDate;
     private String engineType;
     private int maxSpeed;
     private double timeToHundreetKPH;
@@ -15,12 +16,12 @@ class Car {
     private List<CarDoors> doors = new ArrayList<>();
 
     public Car(String productionDate) {
-        this.productionDate = productionDate;
+        this.productionDate = LocalDate.now();
     }
 
     public Car(String productionDate, String engineType, int maxSpeed, double timeToHundreetKPH,
                int maxNumberOfPassengers, int actualNumberOfPassengers, int currentSpeed) {
-        this.productionDate = productionDate;
+        this.productionDate = LocalDate.now();
         this.engineType = engineType;
         this.maxSpeed = maxSpeed;
         this.timeToHundreetKPH = timeToHundreetKPH;
