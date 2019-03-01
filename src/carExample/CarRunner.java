@@ -1,5 +1,4 @@
 package carExample;
-
 import java.util.Scanner;
 
 public class CarRunner {
