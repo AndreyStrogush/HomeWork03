@@ -15,11 +15,11 @@ class Car {
     private List<CarWheels> wheels = new ArrayList<>();
     private List<CarDoors> doors = new ArrayList<>();
 
-    public Car(String productionDate) {
+    public Car(LocalDate productionDate) {
         this.productionDate = LocalDate.now();
     }
 
-    public Car(String productionDate, String engineType, int maxSpeed, double timeToHundreetKPH,
+    public Car(LocalDate productionDate, String engineType, int maxSpeed, double timeToHundreetKPH,
                int maxNumberOfPassengers, int actualNumberOfPassengers, int currentSpeed) {
         this.productionDate = LocalDate.now();
         this.engineType = engineType;
