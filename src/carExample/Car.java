@@ -1,10 +1,11 @@
 package carExample;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 class Car {
-    private final String productionDate;
+    private final LocalDate productionDate;
     private String engineType;
     private int maxSpeed;
     private double timeToHundreetKPH;
@@ -14,11 +15,11 @@ class Car {
     private List<CarWheels> wheels = new ArrayList<>();
     private List<CarDoors> doors = new ArrayList<>();
 
-    public Car(String productionDate) {
+    public Car(LocalDate productionDate) {
         this.productionDate = productionDate;
     }
 
-    public Car(String productionDate, String engineType, int maxSpeed, double timeToHundreetKPH,
+    public Car(LocalDate productionDate, String engineType, int maxSpeed, double timeToHundreetKPH,
                int maxNumberOfPassengers, int actualNumberOfPassengers, int currentSpeed) {
         this.productionDate = productionDate;
         this.engineType = engineType;
@@ -115,6 +116,21 @@ class Car {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Car{" +
+                "productionDate=" + productionDate +
+                ", engineType='" + engineType + '\'' +
+                ", maxSpeed=" + maxSpeed +
+                ", timeToHundreetKPH=" + timeToHundreetKPH +
+                ", maxNumberOfPassengers=" + maxNumberOfPassengers +
+                ", actualNumberOfPassengers=" + actualNumberOfPassengers +
+                ", currentSpeed=" + currentSpeed +
+                ", wheels=" + wheels +
+                ", doors=" + doors +
+                '}';
+    }
+
     public void printInfoAboutCar() {
         System.out.println("\t Car Information \n" +
                 "Date of production is: " + productionDate + "\n" +
@@ -133,6 +149,7 @@ class Car {
             door.printDoorsInfo();
         }
         calculateActualMaxSpeed();
+
     }
 }
 /*
