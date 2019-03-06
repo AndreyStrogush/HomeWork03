@@ -16,12 +16,12 @@ class Car {
     private List<CarDoors> doors = new ArrayList<>();
 
     public Car(LocalDate productionDate) {
-        this.productionDate = LocalDate.now();
+        this.productionDate = productionDate;
     }
 
     public Car(LocalDate productionDate, String engineType, int maxSpeed, double timeToHundreetKPH,
                int maxNumberOfPassengers, int actualNumberOfPassengers, int currentSpeed) {
-        this.productionDate = LocalDate.now();
+        this.productionDate = productionDate;
         this.engineType = engineType;
         this.maxSpeed = maxSpeed;
         this.timeToHundreetKPH = timeToHundreetKPH;
